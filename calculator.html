@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Eating Well</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div align="center" style="margin-bottom: 100px">
+    <a href="index.html" target="_self">
+        <img alt="EatingWell" style="height: 100px;padding-top: 20px"
+             src="img/eatingwell_logo.svg">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="#">Healthy Recipes</a>
+                <ul>
+                    <li><a href='breakfastrecipes.html'>Breakfast Recipes</a></li>
+                    <li><a href='lunchrecipes.html'>Lunch Recipes</a></li>
+                    <li><a href='dinnerrecipes.html'>Dinner Recipes</a></li>
+                    <li><a href='appetizerrecipes.html'>Appetizer Recipes</a></li>
+                    <li><a href='dessertrecipes.html'>Dessert Recipes</a></li>
+                </ul>
+            </li>
+            <li><a href="videos.html">Weight Loss</a></li>
+            <li><a href="calculator.html">Meal Plans</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <h3>Calori Calculator</h3>
+    <div id="form-container" style="background-color: #EEEEEE;overflow:hidden;width: 30%">
+        <form action="" id="bmiform" onsubmit="return false;">
+            <div class="form-group" id="form-group-1">
+                <div class="form-control">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" class="gredient_input">
+                        <option value="F">Female</option>
+                        <option value="M">Male</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="age">Age:</label>
+                    <input class="gredient_input" type="number" id="age" placeholder="age">
+                </div>
+            </div>
+            <div class="form-group" id="form-group-2">
+                <div class="form-control">
+                    <label for="weight">Weight (kg):</label>
+                    <input class="gredient_input" type="number" id="weight" placeholder="weight in kg">
+                </div>
+            </div>
+            <div class="form-group" id="form-group-3">
+                <div class="form-control">
+                    <label for="height">Height (cm):</label>
+                    <input class="gredient_input" type="number" id="height" placeholder="height in cm">
+                </div>
+            </div>
+            <div class="form-group" id="form-group-4">
+                <div class="form-control">
+                    <label for="activity">Activity:</label>
+                    <select class="gredient_input" id="activity">
+                        <option value="">-- Select from the dropdown --</option>
+                        <option value="1.2">Sedentary</option>
+                        <option value="1.375">Lightly active</option>
+                        <option value="1.55">Moderately active</option>
+                        <option value="1.725">Very active</option>
+                        <option value="1.9">Extremely active</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group" id="form-group-5">
+                <div class="form-control">
+                    <input type="button" class="button" value="Calculate" onclick="calculateTotal();">
+                </div>
+            </div>
+
+            <div class="form-group" id="form-group-6">
+                <div class="form-control">
+                    <div class="well text-center" style="background: #699b3b">
+                        <h2 style="color:#ffffff"><span title="Result"><div id="totalPrice"></div></span></h2>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="footer-row1">
+    <div id="footer-bg">
+        <div id="footer" class="container_24">
+            <div class="copyright">
+                SERVET SERHAT OZDEN &COPY; servetozden50@hotmail.com>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

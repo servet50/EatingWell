@@ -1,0 +1,41 @@
+ul#menu, ul#menu ul.sub-menu {
+    margin: 0;
+    padding: 0;
+}
+
+ul#menu li, ul#menu ul.sub-menu li {
+    display: inline-block;
+    padding: 0 10px;
+    margin: auto -2px;
+}
+
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    color: black;
+    display: inline-block;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 0 10px;
+    background-color: white;
+}
+
+ul#menu li {
+    position: relative;
+}
+
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+ul#menu li ul.sub-menu li {
+    padding-top: 2px;
+}
+
+ul#menu li:hover ul.sub-menu {
+    display: block;
+}
